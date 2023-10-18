@@ -1,6 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import {useEffect, useState} from 'react';
+import {useEffect, useState, createContext, useContext} from 'react';
+import ContextPractice from './ContextPractice';
+
+
+
+// class형 컴포넌트 : 작성이 어렵다, 
+// 함수형 컴포넌트 : 작성이 쉽다, 성능이슈가 있다
+
+
+
+
+
 
 
 function Contents(abab){
@@ -83,7 +94,7 @@ function App() {
 
 
       {배열.map((아무거나)=><Contents content={아무거나}></Contents>)}
-
+      <ContextPractice></ContextPractice>
     </div>
   );
 }
