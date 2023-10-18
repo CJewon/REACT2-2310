@@ -1,7 +1,10 @@
 import React from 'react'
+import CafeCounter from './CafeCounter'
 
 export default function CafeInner() {
   return (
-    <div>CafeInner</div>
+    <div>
+      <CafeCounter></CafeCounter>
+    </div>
   )
 }

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState, createContext, useContext} from 'react';
 import ContextPractice from './ContextPractice';
+import Cafe from './Cafe';
 
 
 
@@ -95,6 +96,7 @@ function App() {
 
       {배열.map((아무거나)=><Contents content={아무거나}></Contents>)}
       <ContextPractice></ContextPractice>
+      <Cafe></Cafe>
     </div>
   );
 }
