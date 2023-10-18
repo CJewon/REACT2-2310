@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import CafeInner from './CafeInner'
+
+const CafeContext = createContext();
 
 export default function Cafe() {
   return (
-    <div>
+    <CafeContext.Provider value='붕붕슈크림라떼'>
       <CafeInner></CafeInner>
-    </div>
+    </CafeContext.Provider >
   )
 }

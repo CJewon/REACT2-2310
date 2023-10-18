@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {useEffect, useState, createContext, useContext} from 'react';
+import {useEffect, useState, createContext, useContext, useRef} from 'react';
 import ContextPractice from './ContextPractice';
 import Cafe from './Cafe';
 
@@ -80,10 +80,19 @@ function App() {
 
   const [mountComp, setMountComp] = useState(false);
 
+  const practiceRef = useRef(null)
+
   // mount, unmonut, update   
+
+  function clickEvent() {
+    practiceRef.current.className.add('yellow');
+  }
 
   return (
     <div className="App">
+      <button className='blue' ref={practiceRef}>파란버튼</button>
+
+
       <button onClick={() => {setMountComp(!mountComp)}}>컴포넌트 토글</button>
 
       {mountComp?<TestUseEffect count={count} setCount={setCount}></TestUseEffect>:null}
@@ -97,6 +106,9 @@ function App() {
       {배열.map((아무거나)=><Contents content={아무거나}></Contents>)}
       <ContextPractice></ContextPractice>
       <Cafe></Cafe>
+
+
+
     </div>
   );
 }
