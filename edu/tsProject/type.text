@@ -1,0 +1,17 @@
+typeScript 설치 및 콘솔 작성방법
+
+1. npm install typescript
+
+
+
+
+기본 사용하던 React에 typeScript를 연결하려면
+
+   내가 기존에 사용하던 React파일경로에  npm install --save typescript @types/node @types/react @types/react-dom @types/jest << 입력
+
+프로젝트를 시작할때 React를 typeScript로 연결하려면
+    
+    npx create-react-app 파일이름 --template typescript  << 입력
+
+
+interface 형태를 지원한다. (지향)
