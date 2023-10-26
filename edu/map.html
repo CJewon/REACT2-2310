@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const bb = ['감','배','닭','마늘']
+
+        bb.map((contents)=>{
+            console.log(contents)
+        })
+
+
+        for(let i = 0 ; i < bb.length ; i ++) {
+            console.log(bb[i]);
+        }
+
+
+
+        const 숫자 = [5,10,3,6];
+        // 계산된숫자 [10,20,6,12]
+        
+        // for(let i = 0 ; i < 숫자.length ; i ++) {
+            //     계산된숫자.push( 숫자[i] * 2 )
+            // }
+            
+            
+            // const 계산된숫자 = [];
+            // 숫자.map((아무거나)=>{계산된숫자.push(아무거나*2)})
+            
+            // const 계산된숫자 = 숫자.map((아무거나)=>{
+                //     return 아무거나*2;
+                // })
+                const 계산된숫자 = 숫자.map((아무거나)=>아무거나*2)
+
+            
+        console.log(계산된숫자);
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>
