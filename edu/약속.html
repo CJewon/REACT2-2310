@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function 작업1() {
+            return new Promise((res) => {
+                setTimeout(() => {
+                    console.log('작업1완료');
+                    res();
+                }, 1000);
+            })
+        }
+        function 작업2() {
+            return new Promise((res) => {
+                setTimeout(() => {
+                    console.log('작업2완료');
+                    res();
+                }, 1000);
+            })
+        }
+        function 작업3() {
+            return new Promise((res) => {
+                setTimeout(() => {
+                    console.log('작업3완료');
+                    res();
+                }, 1000);
+            })
+        }
+
+        // Promise 객체의 기본형
+        // Promise 객체는 Catch와 같이 쓰이는 경우가 많다.
+
+        작업1()
+        .then(작업2)
+        .then(작업3)
+        .then(() => {
+            console.log('작업완료');
+        })
+
+
+        
+
+    </script>
+</body>
+</html>
